@@ -31,7 +31,7 @@ public final class HeadExchange
     	  }
     	  if(senp.getInventory().getItemInMainHand().getType()==Material.SKELETON_SKULL || senp.getInventory().getItemInMainHand().getType()==Material.WITHER_SKELETON_SKULL || senp.getInventory().getItemInMainHand().getType()==Material.CREEPER_HEAD || senp.getInventory().getItemInMainHand().getType()==Material.PLAYER_HEAD || senp.getInventory().getItemInMainHand().getType()==Material.ZOMBIE_HEAD || senp.getInventory().getItemInMainHand().getType()==Material.DRAGON_HEAD) {
     		  senp.getInventory().clear(senp.getInventory().getHeldItemSlot());
-    		  Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "give "+senp.getName()+" player_head{SkullOwner:"+args[0]+"}");
+    		  Bukkit.getServer().dispatchCommand(Bukkit.getConsoleSender(), "give "+senp.getName()+" player_head 1 {SkullOwner:"+args[0]+"}");
     	  }
           return true;
       } //如果以上内容成功执行，则返回true 
